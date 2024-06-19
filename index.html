@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/normalize.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body class="body">
+
+  <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <a href="#"><img src="./images/Logo.svg" width="112" height="40" alt="logo" class="logo"></a>
+        <nav class="nav" title="Меню">
+          <ul class="list-reset nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Наши предложения</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Цены</a></li>
+          </ul>
+        </nav>
+
+        <button class="btn-reset burger" aria-label="Открыть меню">
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content container-text">
+          <h2 class="hero__title"><span class="hero__title--white">Черная</span> <span
+              class="hero__title--purple">Пятница
+              <img class="hero__title-svg" src="./images/sale.svg" alt="sale">
+            </span></h2>
+          <div class="hero__text">
+            <p class="hero__descr">
+              Воспользуйтесь выгодными предложениями от Roistat в ноябре*
+            </p>
+            <button id="open-modal-btn" class="hero__btn btn-reset modal-btn">Получить выгоду</button>
+          </div>
+        </div>
+      </div>
+      <div class="hero__star">
+        <svg width="327" height="333" viewBox="0 0 327 333" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M219.902 194.299L309.186 167.433L209.436 152.555L232.053 42.2781L168.06 124.184L88.1461 27.8374L128.543 146.332L17.5679 161.979L136.145 200.251L107.681 323.193L181.679 220.774L255.291 289.224L219.902 194.299Z"
+            stroke="white" stroke-width="23.9667" />
+        </svg>
+      </div>
+
+      <div class="lent-blue">
+        <span>
+          2023 black friday <img src="./images/079.svg" width="46" height="48"> 2023 black friday <img
+            src="./images/079.svg" width="46" height="48"> 2023 black friday <img src="./images/079.svg" width="46"
+            height="48">
+          2023 black friday <img src="./images/079.svg" width="46" height="48"> 2023 black friday <img
+            src="./images/079.svg" width="46" height="48"> 2023 black friday <img src="./images/079.svg" width="46"
+            height="48">
+        </span>
+      </div>
+
+      <div class="lent-yellow">
+        <span>
+          2023 black friday <img src="./images/079.svg" width="46" height="48"> 2023 black friday <img
+            src="./images/079.svg" width="46" height="48"> 2023 black friday <img src="./images/079.svg" width="46"
+            height="48">
+          2023 black friday <img src="./images/079.svg" width="46" height="48"> 2023 black friday <img
+            src="./images/079.svg" width="46" height="48"> 2023 black friday <img src="./images/079.svg" width="46"
+            height="48">
+        </span>
+      </div>
+
+      <p class="header__stock">
+        *Акция не распространяется на подключение опций, лимитов, которые были подключены ранее до 1.11.2023 Количество
+        предложений ограничено
+      </p>
+    </section>
+
+    <div id="my-modal" class="modal">
+      <div class="modal__box">
+        <button id="close-my-modal-btn" class="modal__close-btn">
+          <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+              fill="#333333" />
+            <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+          </svg>
+        </button>
+        <h2 class="modal__title">Регистрация</h2>
+        <p class="modal__content">
+        <form action="process_form.php" method="post" class="form">
+          <input class="form__input form__name" type="text" name="name" placeholder="Имя" required>
+          <input class="form__input form__number" type="number" name="phone" placeholder="Телефон" required>
+          <input class="form__input form__company" type="text" name="company" placeholder="Сайт компании">
+          <button class="btn-reset form__btn" type="submit">Получить код</button>
+          <label for="checkbox" class="checkbox">
+            <input type="checkbox" id="checkbox" name="consent" class="checkbox__real" required>
+            <span class="checkbox__custom"></span>
+            <p class="checkbox__descr">
+              Отправляя сведения через электронную форму, вы даете согласие на обработку персональных данных, в том числе сбор,
+              хранение и передачу третьим лицам представленной вами информации на условиях
+              <a href="#" class="checkbox__descr checkbox__link">Политики обработки персональных данных.</a>
+            </p>
+          </label>
+        </form>
+        </p>
+      </div>
+    </div>
+
+
+  </main>
+
+</body>
+
+</html>
